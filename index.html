@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no, address=no, email=no, date=no">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="favicon.png">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="src/css/font.css">
+    <link rel="stylesheet" href="src/css/index.css">
+</head>
+
+<body>
+    <div id="pop-wrap">
+        <div class="pop-wrap2">
+
+            <div class="pop-kv">
+                <div class="exit"></div>
+            </div>
+            <!-- event01/ pop up -->
+            <div class="e1-pop">
+                <div class="pop-info">
+                    <span class="sr-only">event01 이벤트 참여를 위해 개인 정보를 입력해 주세요!</span>
+                    <div class="input-box">
+                        <input type="text" class="name-check" aria-label="이름">
+                        <input type="tel" class="phone-number-check" aria-label="연락처" maxlength="11">
+                        <input type="text" class="address-check" aria-lable="주소" readonly>
+                        <input type="text" class="address-check" aria-lable="주소" readonly>
+                        <input type="text" class="address-check" aria-lable="주소">
+                        <input type="text" class="add-sns" aria-lable="체험단 sns">
+                        <div class="search"></div>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" id="chkbox0">
+                        <label for="chkbox0"><span class="sr-only">개인 정보 취급/이용 약관에 동의</span></label>
+                    </div>
+                    <div class="pop-info-content">
+                        [㈜동서식품 이벤트 개인정보 수집 및 처리 위탁 동의]
+                        <br><br> [개인정보 수집 및 이용동의]
+                        <br><br> ㈜동서식품은 이벤트 진행을 위한 개인정보 수집 및 이용을 위하여 다음과 같이 귀하의 동의를 받고자 합니다.<br>
+                        <br> 1. 개인정보의 수집<br> (1) 개인정보 수집 항목 : 이름, 휴대폰번호, 거주지 주소<br> (2) 수집목적 : 동서식품 이벤트 진행<br> (3) 보유 및 이용기간 : 이벤트 종료 후 3개월 (이후 즉시 파기)<br>
+                        <br> 2. 마케팅 목적 및 이용<br> (1) 개인정보 수집 항목 : 이름, 휴대폰번호, 거주지 주소<br> (2) 수집목적 : 이벤트 참여자 대상 경품 안내, 브랜드 행사 및 프로모션 안내<br> (3) 보유 및 이용기간 : 이벤트 종료 후 3개월 (이후 즉시 파기)<br>
+                        <br> 3. 개인정보의 위탁 동의<br> (1) 정보 제공 위탁 업체 : ㈜디메이트 커뮤니케이션즈, ㈜비스톤즈, ㈜젤라블루<br> (2) 개인정보 취급 위탁 항목 : 이름, 휴대폰번호, 거주지 주소<br> (3) 위탁업무 : 이벤트 진행 및 당첨자 경품 배송 업무, 이벤트 참여자 대상 혜택 안내, 브랜드 행사 및 프로모션 안내<br> (4) 보유 및 이용기간 : 이벤트 종료 후 3개월 (이후 즉시 파기)<br>
+                        <br> ㈜동서식품은 위와 같이 고객의 정보를 수집 이용 및 위탁하고자하며, 동의한 업무 이외의 목적으로 고객의 정보를 이용하지 않습니다.<br>
+                    </div>
+                    <div class="okay"><span class="sr-only">확인</span></div>
+                    <div class="exit"><span class="sr-only">닫기</span></div>
+                </div>
+                <div class="pop-last">
+                    <span class="sr-only">Event1 이벤츠 참여가 완료되었습니다. 친구들에게도 이벤트를 알려주세요!</span>
+                    <div class="sns">
+                        <a href="javascript:;"><img src="src/img/facebook.png" alt="페이스북"></a>
+                        <a href="javascript:;"> <img src="src/img/kakao.png" alt="카카오톡"></a>
+                        <a href="javascript:;"> <img src="src/img/naver.png" alt="네이버"></a>
+                    </div>
+                    <div class="okay"><span class="sr-only">확인</span>
+                    </div>
+                    <div class="exit"><span class="sr-only">닫기</span></div>
+                </div>
+            </div>
+
+
+            <!-- event02/ pop up -->
+            <div class="e2-pop">
+                <div class="pop1">
+                    <span class="sr-only">Event2 포스트 라이스N화이버 핑크볼 체험단 후기 이벤트</span>
+                    <span class="sr-only">핑크볼 시리얼, 라이스N화이버의 후기를 남겨주세요.</span>
+                    <span class="sr-only">* 내 인스타그램에 업로드 후 이벤트 추가 참여하시면 당첨 확률이 올라가요!</span>
+                    <div class="select-img"></div>
+                    <input id="fileInput" type="file" class="choice-img" name="file_img" accept="image/*, .jpg, .png">
+                    <label for="fileInput" class="choice-img"><span class="sr-only">이미지 선택하기</span></label>
+                    <div class="exit"><span class="sr-only">닫기</span></div>
+                </div>
+
+                <div class="pop2">
+                    <span class="sr-only">event2 포스트 라이스N화이버 핑크볼 체험단 후기 이벤트</span>
+                    <span class="sr-only">이미지를 드래그해서 위치를 이동시키거나 확대/축소하실 수 있습니다.</span>
+                    <div class="checked-img">
+                        <img src="src/img/checked-img.png" alt="">
+                    </div>
+                    <div class="e2-button">
+                        <div class="re-choice"><span class="sr-only">이미지 다시 선택</span></div>
+                        <div class="okay"><span class="sr-only">확인</span></div>
+                    </div>
+                    <div class="exit"><span class="sr-only">닫기</span></div>
+
+                </div>
+
+                <div class="pop-info">
+                    <span class="sr-only">Event2 포스트라이스N화이버 핑크볼 체험단 후기 이벤트</span>
+                    <span class="sr-only">이벤트 참여를 위해 인증을 남긴 인스타그램 URL 혹인 계정과 개인정보를 입력해주세요.</span>
+                    <div class="input-box">
+                        <input type="text" class="insta-check" aria-label="인스타그램 URL 또는 계정">
+                        <input type="text" class="name-check" aria-label="이름">
+                        <input type="tel" class="phone-number-check" aria-label="연락처" maxlength="11">
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" id="chkbox">
+                        <label for="chkbox"><span class="sr-only">개인 정보 취급/이용 약관에 동의</span></label>
+                    </div>
+                    <div class="pop-info-content2">
+                        [㈜동서식품 이벤트 개인정보 수집 및 처리 위탁 동의]
+                        <br><br> [개인정보 수집 및 이용동의]
+                        <br><br> ㈜동서식품은 이벤트 진행을 위한 개인정보 수집 및 이용을 위하여 다음과 같이 귀하의 동의를 받고자 합니다.<br>
+                        <br> 1. 개인정보의 수집<br> (1) 개인정보 수집 항목 : 이름, 휴대폰번호, 거주지 주소<br> (2) 수집목적 : 동서식품 이벤트 진행<br> (3) 보유 및 이용기간 : 이벤트 종료 후 3개월 (이후 즉시 파기)<br>
+                        <br> 2. 마케팅 목적 및 이용<br> (1) 개인정보 수집 항목 : 이름, 휴대폰번호, 거주지 주소<br> (2) 수집목적 : 이벤트 참여자 대상 경품 안내, 브랜드 행사 및 프로모션 안내<br> (3) 보유 및 이용기간 : 이벤트 종료 후 3개월 (이후 즉시 파기)<br>
+                        <br> 3. 개인정보의 위탁 동의<br> (1) 정보 제공 위탁 업체 : ㈜디메이트 커뮤니케이션즈, ㈜비스톤즈, ㈜젤라블루<br> (2) 개인정보 취급 위탁 항목 : 이름, 휴대폰번호, 거주지 주소<br> (3) 위탁업무 : 이벤트 진행 및 당첨자 경품 배송 업무, 이벤트 참여자 대상 혜택 안내, 브랜드 행사 및 프로모션 안내<br> (4) 보유 및 이용기간 : 이벤트 종료 후 3개월 (이후 즉시 파기)<br>
+                        <br> ㈜동서식품은 위와 같이 고객의 정보를 수집 이용 및 위탁하고자하며, 동의한 업무 이외의 목적으로 고객의 정보를 이용하지 않습니다.<br>
+                    </div>
+                    <div class="okay"><span class="sr-only">확인</span></div>
+                    <div class="exit"><span class="sr-only">닫기</span></div>
+                </div>
+            </div>
+
+            <!-- event03 / pop up -->
+
+            <div class="e3-pop">
+                <span class="sr-only">Event3 고소한 쌀 후레이크에 핑크색 식이섬유 볼이 쏙쏙! 핑크볼을 찾아주세요!</span>
+                <div class="pop1">
+                    <!--				pinkball event-->
+                    <ul class="pink-ball">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <div class="pink-pop1">
+                        <span class="sr-only">사과 1개 분량의 식이섬유 3.3g이 들어있는 핑크볼 찾기 완료!</span>
+                        <span class="sr-only">*라이스N화이버 1회 권장량 30g 기준</span>
+                        <span class="sr-only">나머지 핑크볼도 찾아보세요!</span>
+                    </div>
+                    <div class="pink-pop2">
+                        <span class="sr-only">상큼한 애플요거트맛</span>
+                        <span class="sr-only">핑크볼 찾기 완료!</span>
+                        <span class="sr-only">나머지 핑크볼도 찾아보세요!</span>
+                    </div>
+                    <div class="pink-pop3">
+                        <span class="sr-only">장에 좋은 프리바이오틱스가 들어간</span>
+                        <span class="sr-only">핑크볼 찾기 완료!</span>
+                        <span class="sr-only">핑크볼을 모두 찾았어요!</span>
+                    </div>
+                    <div class="exit"><span class="sr-only">닫기</span></div>
+                </div>
+
+                <div class="pop-info">
+                    <span class="sr-only">event03 이벤트 참여를 위해 개인 정보를 입력해 주세요!</span>
+                    <div class="input-box">
+                        <input type="text" class="name-check" aria-label="이름">
+                        <input type="tel" class="phone-number-check" aria-label="연락처" maxlength="11">
+                    </div>
+
+                    <div class="checkbox">
+                        <input type="checkbox" id="chkbox3">
+                        <label for="chkbox3"><span class="sr-only">개인 정보 취급/이용 약관에 동의</span></label>
+                    </div>
+
+                    <div class="pop-info-content">
+                        [㈜동서식품 이벤트 개인정보 수집 및 처리 위탁 동의]
+                        <br><br> [개인정보 수집 및 이용동의]
+                        <br><br> ㈜동서식품은 이벤트 진행을 위한 개인정보 수집 및 이용을 위하여 다음과 같이 귀하의 동의를 받고자 합니다.<br>
+                        <br> 1. 개인정보의 수집<br> (1) 개인정보 수집 항목 : 이름, 휴대폰번호, 거주지 주소<br> (2) 수집목적 : 동서식품 이벤트 진행<br> (3) 보유 및 이용기간 : 이벤트 종료 후 3개월 (이후 즉시 파기)<br>
+                        <br> 2. 마케팅 목적 및 이용<br> (1) 개인정보 수집 항목 : 이름, 휴대폰번호, 거주지 주소<br> (2) 수집목적 : 이벤트 참여자 대상 경품 안내, 브랜드 행사 및 프로모션 안내<br> (3) 보유 및 이용기간 : 이벤트 종료 후 3개월 (이후 즉시 파기)<br>
+                        <br> 3. 개인정보의 위탁 동의<br> (1) 정보 제공 위탁 업체 : ㈜디메이트 커뮤니케이션즈, ㈜비스톤즈, ㈜젤라블루<br> (2) 개인정보 취급 위탁 항목 : 이름, 휴대폰번호, 거주지 주소<br> (3) 위탁업무 : 이벤트 진행 및 당첨자 경품 배송 업무, 이벤트 참여자 대상 혜택 안내, 브랜드 행사 및 프로모션 안내<br> (4) 보유 및 이용기간 : 이벤트 종료 후 3개월 (이후 즉시 파기)<br>
+                        <br> ㈜동서식품은 위와 같이 고객의 정보를 수집 이용 및 위탁하고자하며, 동의한 업무 이외의 목적으로 고객의 정보를 이용하지 않습니다.<br>
+                    </div>
+
+                    <div class="okay"><span class="sr-only">확인</span></div>
+                    <div class="exit"><span class="sr-only">닫기</span></div>
+                </div>
+
+                <div class="pop-last">
+                    <span class="sr-only">Event3 이벤트 참여가 완료되었습니다. 친구들에게도 이벤트를 알려주세요</span>
+                    <div class="sns">
+                        <a href="javascript:;"><img src="src/img/facebook.png" alt="페이스북"></a>
+                        <a href="javascript:;"> <img src="src/img/kakao.png" alt="카카오톡"></a>
+                        <a href="javascript:;"> <img src="src/img/naver.png" alt="네이버"></a>
+                    </div>
+                    <div class="okay"><span class="sr-only">확인</span>
+                    </div>
+                    <div class="exit"><span class="sr-only">닫기</span></div>
+                </div>
+
+
+            </div>
+
+            <!--	who's pic -->
+            <div class="pop-who">
+                <div class="pop-who1">
+                    <div class="who-pic"><span class="customer">김X호</span> 님의 후기 사진</div>
+                    <div class="last-pic"></div>
+                    <div class="okay"></div>
+                </div>
+                <div class="exit"></div>
+
+            </div>
+            <!-- -----------체험단 발표 수정----------- -->
+            <div class="pop-win">
+                <div class="win-ball-1">
+                    <div class="winner-list">
+                        <img src="./src/img/applewatch.png" alt="applewatch" class="applewatch-img" width="488" height="261">
+                        <ul>
+                            <li><span class="winner-name">장*정</span> <span class="winner-phone">53*2</span></li>
+                        </ul>
+                        <img src="./src/img/rush.png" alt="rush" class="rush-img" width="488" height="247">
+                        <ul>
+                            <li><span class="winner-name">신*미</span> <span class="winner-phone">67*7</span></li>
+                            <li><span class="winner-name">권*희</span> <span class="winner-phone">70*3</span></li>
+                            <li><span class="winner-name">조*은</span> <span class="winner-phone">19*2</span></li>
+                            <li><span class="winner-name">전*경</span> <span class="winner-phone">82*4</span></li>
+                            <li><span class="winner-name">송*림</span> <span class="winner-phone">41*8</span></li>
+                            <li><span class="winner-name">배*임</span> <span class="winner-phone">68*6</span></li>
+                            <li><span class="winner-name">서*영</span> <span class="winner-phone">41*2</span></li>
+                            <li><span class="winner-name">이*림</span> <span class="winner-phone">04*1</span></li>
+                            <li><span class="winner-name">박*하</span> <span class="winner-phone">61*3</span></li>
+                            <li><span class="winner-name">오*인</span> <span class="winner-phone">20*4</span></li>
+                        </ul>
+                        <img src="./src/img/oliveyoung.png" alt="oliveyoung" class="olive-img" width="423" height="246">
+                        <ul>
+                            <li><span class="winner-name">최*진</span> <span class="winner-phone">85*2</span></li>
+                            <li><span class="winner-name">오*정</span> <span class="winner-phone">08*0</span></li>
+                            <li><span class="winner-name">선*은</span> <span class="winner-phone">84*8</span></li>
+                            <li><span class="winner-name">황*정</span> <span class="winner-phone">11*0</span></li>
+                            <li><span class="winner-name">홍*서</span> <span class="winner-phone">69*3</span></li>
+                            <li><span class="winner-name">김*홍</span> <span class="winner-phone">63*3</span></li>
+                            <li><span class="winner-name">이*선</span> <span class="winner-phone">21*5</span></li>
+                            <li><span class="winner-name">손*영</span> <span class="winner-phone">11*6</span></li>
+                            <li><span class="winner-name">최*다</span> <span class="winner-phone">48*0</span></li>
+                            <li><span class="winner-name">조*래</span> <span class="winner-phone">88*5</span></li>
+                            <li><span class="winner-name">김*나</span> <span class="winner-phone">92*6</span></li>
+                            <li><span class="winner-name">정*화</span> <span class="winner-phone">84*1</span></li>
+                            <li><span class="winner-name">송*선</span> <span class="winner-phone">31*3</span></li>
+                            <li><span class="winner-name">김*라</span> <span class="winner-phone">95*8</span></li>
+                            <li><span class="winner-name">이*아</span> <span class="winner-phone">23*5</span></li>
+                            <li><span class="winner-name">최*님</span> <span class="winner-phone">62*9</span></li>
+                            <li><span class="winner-name">정*솜</span> <span class="winner-phone">93*8</span></li>
+                            <li><span class="winner-name">김*란</span> <span class="winner-phone">14*1</span></li>
+                            <li><span class="winner-name">최*주</span> <span class="winner-phone">09*3</span></li>
+                            <li><span class="winner-name">소*리</span> <span class="winner-phone">32*0</span></li>
+                            <li><span class="winner-name">김*린</span> <span class="winner-phone">85*0</span></li>
+                            <li><span class="winner-name">최*경</span> <span class="winner-phone">05*6</span></li>
+                            <li><span class="winner-name">사*리</span> <span class="winner-phone">03*1</span></li>
+                            <li><span class="winner-name">김*해</span> <span class="winner-phone">22*8</span></li>
+                            <li><span class="winner-name">정*라</span> <span class="winner-phone">48*4</span></li>
+                            <li><span class="winner-name">김*리</span> <span class="winner-phone">72*1</span></li>
+                            <li><span class="winner-name">박*영</span> <span class="winner-phone">90*3</span></li>
+                            <li><span class="winner-name">임*랑</span> <span class="winner-phone">11*7</span></li>
+                            <li><span class="winner-name">백*숙</span> <span class="winner-phone">02*2</span></li>
+                            <li><span class="winner-name">진*연</span> <span class="winner-phone">12*0</span></li>
+                        </ul>
+
+                        <div class="okay">
+                        </div>
+
+
+                    </div>
+                    <div class="exit"></div>
+                </div>
+                <!-- -----------체험단 당첨자 이름 추가----------- -->
+                <div class="win-ball-2"></div>
+                <div class="win-review-1"></div>
+                <div class="win-review-2"></div>
+                <div class="win-find"></div>
+
+            </div>
+
+
+        </div>
+    </div>
+    <!--	//pop-wrap -->
+
+    <!-- wrap -->
+    <div id="wrap">
+        <!--	header-->
+        <header>
+            <h1 class="logo">
+                <a href="index.html"><img src="src/img/logo.png" alt="포스트"></a>
+            </h1>
+            <nav class="gnb">
+                <a href="#" class="evt01">event01</a>
+                <a href="#" class="evt02">event02</a>
+                <a href="#" class="evt03">event03</a>
+                <a href="http://www.11st.co.kr/products/2957234627?trTypeCd=21&trCtgrNo=585021" target="_blank" class="evt04">구매하기</a>
+            </nav>
+            <div class="gnbOn"></div>
+            <div class="gnb2"></div>
+        </header>
+        <!--        header end-->
+
+        <main>
+            <div class="main-kv">
+                <span class="sr-only">건강 한끼 식이섬유, 핑크볼 시리얼, 라이스 앤 화이버 시리얼</span>
+            </div>
+
+            <!-- event01 -->
+            <div class="event01-1">
+                <div class="join">
+                    <span class="sr-only">핑크볼체험단 신청</span>
+                </div>
+            </div>
+
+            <div class="event01-2"></div>
+
+            <!--  event 02 -->
+            <div class="event02-1">
+                <span class="sr-only">Event02 포스트라이스N화이버 핑크볼 체험단 후기 이벤트</span>
+                <p class=ev2-t1>핑크볼 시리얼, 라이스N화이버의 <br>체험 후기를 남겨주세요.<br> 인스타그램에 먼저 올리고<br> 이벤트에 참여하시면 당첨 확률 UP! </p>
+                <div class="hash-tag">
+                    <span class="sr-only">이벤트 참여 필수 해시태그</span>
+                    <p class=ev2-t2>#포스트라이스앤화이버 #식이섬유시리얼<br>#식이섬유_핑크볼 #핑크볼시리얼</p>
+                    <div class="copy-tag">
+                        <span class="sr-only">해시태그 복사하기</span>
+                    </div>
+                </div>
+                <div class="ev2-list">
+                    <ul>
+                        <li><img src="src/img/ev2-prize1.png" alt=""></li>
+                        <li><img src="src/img/event1.png" alt=""></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="join">
+                    <span class="sr-only">참여하기</span>
+                </div>
+                <div class="pop">
+                </div>
+            </div>
+
+
+            <!-- event03-->
+            <div class="event03-1">
+                <span class="sr-only">event03 식이섬유가 풍부한 핑크볼을 찾아라</span>
+                <p>1회 권장량 30g에 사과 1개 분량의<br> 식이섬유 3.3g이 가득!<br> 라이스N화이버 속 <span class="pink-font">핑크볼</span>을 모두 찾아주세요!</p>
+                <div class="pink-button">
+                    <span class="sr-only">식이섬유 가득 핑크볼 찾기</span>
+                </div>
+            </div>
+
+            <div class="event-notice">
+                <span class="sr-only">이벤트 안내사항</span>
+                <div class="ev-notice">
+                    <p class="title"><span class="pink-dot"></span> 이벤트 기간</p>
+                    <p class="content">2020년 11월 26일 ~ 12월 22일</p>
+                </div>
+
+                <div class="ev-notice">
+                    <p class="title"><span class="pink-dot"></span> 핑크볼 체험단 선발</p>
+                    <p class="content">1차 : 2020년 12월 4일</p>
+                    <p class="content-sub">(11/26~12/2 참여자 대상)</p>
+                    <p class="content">2차 : 2020년 12월 11일</p>
+                    <p class="content-sub">(12/3~12/9 참여자 대상)</p>
+                </div>
+
+                <div class="ev-notice">
+                    <p class="title"><span class="pink-dot"></span> 후기 이벤트 당첨자 발표</p>
+                    <p class="content">1차 : 2020년 12월 16일</p>
+                    <p class="content-sub">(11/26~12/14 참여자 대상)</p>
+                    <p class="content">2차 : 2020년 12월 24일</p>
+                    <p class="content-sub">(12/15~12/22 참여자 대상)</p>
+                </div>
+
+                <div class="ev-notice">
+                    <p class="title"><span class="pink-dot"></span> 핑크볼을 찾아라 이벤트 당첨자 발표</p>
+                    <p class="content">2020년 12월 24일</p>
+                </div>
+                <!-- 2차 발표를 체험단 후기 당첨으로 수정 -->
+                <div class="ev-winner"></div>
+            </div>
+
+            <!-- event prize -->
+
+            <div class="event-prize">
+                <span class="sr-only">이벤트 경품</span>
+                <div class="ev1-prize">
+                    <div class="ev-title"></div>
+                    <div class="ev1-prize1">
+                        <div class="prize-img"></div>
+                        <div class="prize-name">라이스N화이버(270g)</div>
+                        <div class="prize-amount">총 500명 <span class="grey">(회차 별 250명)</span></div>
+                    </div>
+
+                </div>
+                <div class="ev2-prize">
+
+                    <div class="ev-title"></div>
+                    <div class="ev2-prize1">
+                        <div class="prize-img"></div>
+                        <div class="prize-name">애플워치 SE</div>
+                        <div class="prize-name-sub">(40mm GPS 골드 알루미늄 케이스 모델 / <br>스포츠 밴드 컬러 랜덤)</div>
+                        <div class="prize-amount">총 2명 <span class="grey">(회차 별 1명)</span></div>
+                    </div>
+
+
+                    <div class="ev2-prize2">
+                        <div class="prize-img"></div>
+                        <div class="prize-name">러쉬 스위트니스 기프트</div>
+                        <div class="prize-amount">총 20명 <span class="grey">(회차 별 10명)</span></div>
+                    </div>
+
+
+                    <div class="ev2-prize3">
+                        <div class="prize-img"></div>
+                        <div class="prize-name">올리브영 기프트카드 5천 원권</div>
+                        <div class="prize-amount">총 60명 <span class="grey">(회차 별 30명)</span></div>
+                    </div>
+
+                </div>
+                <div class="ev3-prize">
+                    <div class="ev-title">
+
+                    </div>
+                    <div class="ev3-prize1">
+                        <div class="prize-img"></div>
+                        <div class="prize-name">올리브영 기프트카드 1만 원권</div>
+                        <div class="prize-amount">총 20명
+                        </div>
+                    </div>
+
+
+                    <div class="ev3-prize2">
+                        <div class="prize-img"></div>
+                        <div class="prize-name">라이스N화이버 (270g)</div>
+                        <div class="prize-amount">총 30명
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- notice-->
+            <article class="notice">
+                <span class="sr-only">이벤트 유의사항</span>
+                <div class="txt">
+                    <ul>
+                        <li>본 이벤트의 당첨자는 내부 선발 기준에 따라 선정됩니다.</li>
+                        <li>5만 원을 초과하는 경품의 경우, 소득세법에 의거하여<br> 22% 제세 공과금이 당첨자에게 부과됩니다.</li>
+                        <li>상기 이벤트 설명에 표시된 경품은 제조사 및 제공사<br> 사정에 따라 변경될 수 있으며,<br>이벤트 페이지의 이미지와 다를 수 있습니다.</li>
+                        <li>경품 반송 및 분실은 당사에서 책임지지 않습니다.</li>
+                        <li>수집된 개인 정보는 당첨자 발표 및 경품 증정을 위한<br> 본인 확인 용도로만 사용되며,<br> 이벤트 종료 시 즉시 폐기됩니다.</li>
+                        <li>개인 정보 수집에 대한 동의를 거부할 권리가 있으며,<br> 거부 시 이벤트 응모 및 당첨은 취소됩니다.</li>
+                        <li>참여자 개별 연락은 참여 시 입력한 연락처를 통해 드리며, <br>정확한 정보를 입력하지 않을 경우 당첨이 무효화됩니다.</li>
+                        <li>이벤트 운영 및 경품 배송 등의 사항은 운영 사무국으로 <br>연락 바랍니다. <br>(070-4432-1130, 평일 10:00~18:00 운영)</li>
+                    </ul>
+
+
+                </div>
+
+            </article>
+
+            <!-- footer	-->
+            <footer>
+                <img src="src/img/foot-logo.png" alt="동서식품">
+                <div class="txt">
+                    <p>서울시 마포구 독막로 324 (도화동 546번지) 동서빌딩</p>
+                    <p>Copyright ⓒ Dongsuh Co., Ltd. All rights reserved.</p>
+
+                </div>
+            </footer>
+        </main>
+    </div>
+
+    <script src="src/js/bodyScrollLock.min.js"></script>
+    <script src="src/js/index.js"></script>
+
+</body>
+
+
+
+
+
+</html>
