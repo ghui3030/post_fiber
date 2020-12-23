@@ -2,6 +2,15 @@ $(function() {
 
     const targetElement = document.querySelector('#pop-wrap');
 
+    new Swiper('.swiper-container', {
+        autoHeight: true,
+        loop: true,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        }
+    });
+
     // scroll 
 
     $(window).scroll(function() {
@@ -165,7 +174,7 @@ $(function() {
 
     //close
     $(".exit").click(function() {
-        $(".pop1, .pop2, .pop3, .pop-info, .pop-last, .win-ball-1").removeClass("on");
+        $(".pop1, .pop2, .pop3, .pop-info, .pop-last, .pop-win").removeClass("on");
         $(".input-box input").val('');
         bodyScrollLock.enableBodyScroll(targetElement);
 
@@ -408,15 +417,17 @@ $(function() {
     $(".ev-winner").click(function() {
         $("body").addClass("over");
         $("#pop-wrap").addClass("on");
-        $(".win-ball-1").addClass("on");
+        $(".pop-win").addClass("on");
         bodyScrollLock.disableBodyScroll(targetElement);
     });
 
     $(".pop-win .okay").click(function() {
         $("body").removeClass("over");
         $("#pop-wrap").removeClass("on");
-        $(".win-ball-1").removeClass("on");
+        $(".pop-win").removeClass("on");
         bodyScrollLock.enableBodyScroll(targetElement);
     });
+
+
 
 });
