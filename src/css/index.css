@@ -1064,7 +1064,8 @@ nav {
 /* pop-win*/
 
 .pop-win .win-ball-1 {
-    background: url(../img/pop-winner03.png) no-repeat;
+    /* background: url(../img/pop-winner03.png) no-repeat; */
+    background: url(../img/pop-winner04.png) no-repeat;
     width: 600px;
     height: 2678px;
     background-size: contain;
