@@ -1105,8 +1105,8 @@ nav {
 }
 
 .pop-win .winner-list-1 ul li.name-4 {
-    width: 34%;
-    font-size: 21px;
+    width: 65%;
+    text-align: left;
 }
 
 .pop-win .pop-win-bg{
