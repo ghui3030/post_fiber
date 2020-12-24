@@ -1058,9 +1058,8 @@ nav {
     width: 593px;
     height: 215px;
     background-size: contain;
-    margin-top: -45px;
+    margin: -8% auto 0;
     cursor: pointer;
-    margin-left: -14px;
 }
 
 
@@ -1156,7 +1155,7 @@ nav {
 .pop-win .swiper-button-next{
     width: 34px;
     height: 84px;
-    top: 600px;
+    top: 1190px;
 }
 
 .pop-win .swiper-button-prev{
@@ -1808,8 +1807,6 @@ footer .txt p:nth-child(2) {
     .ev-winner {
         width: 82.3611vw;
         height: 29.8611vw;
-        margin-top: -6.2500vw;
-        margin-left: -1.9444vw;
     }
     /* event-prize*/
     .event-prize {
@@ -2005,7 +2002,7 @@ footer .txt p:nth-child(2) {
     .pop-win .swiper-button-next{
         width: 4.7222vw;
         height: 11.6667vw;
-        top: 83.3333vw;
+        top: 165.3333vw;
     }
     
     .pop-win .swiper-button-prev{
