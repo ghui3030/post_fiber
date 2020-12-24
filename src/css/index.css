@@ -1054,9 +1054,9 @@ nav {
 /* 체험단 후기 이벤트 당첨으로 수정 */
 
 .ev-winner {
-    background: url(../img/winners03.png);
-    width: 636px;
-    height: 209px;
+    background: url(../img/winners04.png);
+    width: 593px;
+    height: 215px;
     background-size: contain;
     margin-top: -45px;
     cursor: pointer;
@@ -1104,6 +1104,11 @@ nav {
     font-family: 'NotoSansKR';
 }
 
+.pop-win .winner-list-1 ul li.name-4 {
+    width: 34%;
+    font-size: 21px;
+}
+
 .pop-win .pop-win-bg{
     width: 600px;
     margin: 0 auto;
@@ -1117,6 +1122,10 @@ nav {
 .pop-win .pop-win-02{
     background: url(../img/pop-win-bg02.png) no-repeat center top / contain;
     height: 2394px;
+}
+
+.pop-win .winner-list-1-1 span:first-child{
+    margin-right: 6px;
 }
 
 .pop-win .winner-list-1-1{
@@ -1797,8 +1806,8 @@ footer .txt p:nth-child(2) {
         letter-spacing: -0.2083vw;
     }
     .ev-winner {
-        width: 88.3333vw;
-        height: 29.0278vw;
+        width: 82.3611vw;
+        height: 29.8611vw;
         margin-top: -6.2500vw;
         margin-left: -1.9444vw;
     }
@@ -1970,6 +1979,14 @@ footer .txt p:nth-child(2) {
     .pop-win .winner-list-1 ul li{
         font-size: 3.3333vw;
         line-height: 6.9444vw;  
+    }
+
+    .pop-win .winner-list-1-1 span:first-child{
+        margin-right: 0.8333vw;
+    }
+
+    .pop-win .winner-list-1 ul li.name-4 {
+        font-size: 2.9167vw;
     }
     
     .pop-win .pop-win-bg{

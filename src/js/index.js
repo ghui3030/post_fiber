@@ -2,13 +2,11 @@ $(function() {
 
     const targetElement = document.querySelector('#pop-wrap');
 
-    new Swiper('.swiper-container', {
-        autoHeight: true,
-        loop: true,
+    var myswiper = new Swiper('.swiper-container', {
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
-        }
+        },  
     });
 
     // scroll 
