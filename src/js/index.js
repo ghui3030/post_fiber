@@ -3,6 +3,7 @@ $(function() {
     const targetElement = document.querySelector('#pop-wrap');
 
     var myswiper = new Swiper('.swiper-container', {
+        loop: true,
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
@@ -416,6 +417,7 @@ $(function() {
         $("body").addClass("over");
         $("#pop-wrap").addClass("on");
         $(".pop-win").addClass("on");
+        myswiper.update();
         bodyScrollLock.disableBodyScroll(targetElement);
     });
 
